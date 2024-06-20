@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
-st.title('Hakan\'ın Konut Birikimi')
+st.title('Hakan\'ın Gayrimenkul Yatırımı Hesaplayıcısı')
 
 birikim_aylik = st.number_input('Her ay biriktirdiği miktar (₺)', min_value=0, step=1000)
 baslangic_yasi = st.number_input('Başlangıç yaşı', min_value=18, max_value=100, step=1)
