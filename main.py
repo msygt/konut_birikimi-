@@ -39,6 +39,6 @@ def hesaplamalar(birikim_aylik, baslangic_yasi, emeklilik_yasi, daire_fiyati, ki
 
     return {'adet_daire': adet_daire, 'toplam_kira_geliri': toplam_kira_geliri}
 
-if st.button('Hesapla'):
+if st.button('Hesaplama'):
     sonuclar = hesaplamalar(birikim_aylik, baslangic_yasi, emeklilik_yasi, daire_fiyati, kira_bedeli, kredi_yili, pesinat_orani)
     st.write('Hakan emeklilik yaşına kadar toplamda {} adet daire alabilir ve toplam kira geliri {} olur.'.format(sonuclar['adet_daire'], sonuclar['toplam_kira_geliri']))
